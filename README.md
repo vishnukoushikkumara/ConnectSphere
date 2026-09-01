@@ -99,6 +99,7 @@ Create a `.env` file in the project root:
 ```env
 GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
+SESSION_SECRET=your_own_long_random_secret
 ```
 
 ## Google OAuth Configuration
