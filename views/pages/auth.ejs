@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <title>ConnectSphere | Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body { 
+            background-color: #0b0f19;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: radial-gradient(circle at top right, rgba(0, 85, 255, 0.15) 0%, transparent 40%),
+                              radial-gradient(circle at bottom left, rgba(0, 162, 255, 0.1) 0%, transparent 40%);
+        }
+        .main-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 16px;
+            padding: 40px;
+            width: 90%;
+            max-width: 480px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(56, 189, 248, 0.1);
+            text-align: center;
+        }
+        .brand-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        .brand-connect { color: #38bdf8; }
+        .brand-sphere { color: #ffffff; }
+        
+        .auth-title {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+        .btn-google {
+            background: #ffffff;
+            color: #1e293b;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            width: 100%;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn-google:hover {
+            background: #f1f5f9;
+            transform: translateY(-2px);
+            color: #1e293b;
+            text-decoration: none;
+        }
+        .btn-google i { color: #ea4335; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+    <div class="main-card">
+        <div class="brand-title"><span class="brand-connect">Connect</span><span class="brand-sphere">Sphere</span></div>
+        <div class="auth-title">Sign in to your account</div>
+        <a href="/auth/google" class="btn-google"><i class="fa fa-google"></i> Sign In with Google</a>
+    </div>
+</body>
+</html>
